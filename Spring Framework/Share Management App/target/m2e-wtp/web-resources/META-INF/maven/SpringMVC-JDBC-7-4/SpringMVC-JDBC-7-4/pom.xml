@@ -1,0 +1,99 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" 
+		 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+		 xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	  <modelVersion>4.0.0</modelVersion>
+	  <groupId>SpringMVC-JDBC-7-4</groupId>
+	  <artifactId>SpringMVC-JDBC-7-4</artifactId>
+	  <version>0.0.1-SNAPSHOT</version>
+	  <packaging>war</packaging>
+	  <name>SpringMVC-JDBC-7-4</name>
+	  <url>http://maven.apache.org</url>
+
+			<dependencies>
+					<!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-dependency-plugin -->
+					<dependency>
+					    <groupId>org.apache.maven.plugins</groupId>
+					    <artifactId>maven-dependency-plugin</artifactId>
+					    <version>3.1.2</version>
+					</dependency>
+					<dependency>
+				      <groupId>junit</groupId>
+				      <artifactId>junit</artifactId>
+				      <version>3.8.1</version>
+				      <scope>test</scope>
+				    </dependency>
+			     	<!-- https://mvnrepository.com/artifact/org.springframework/spring-webmvc -->
+					<dependency>
+					    <groupId>org.springframework</groupId>
+					    <artifactId>spring-webmvc</artifactId>
+					    <version>5.1.1.RELEASE</version>
+					</dependency>
+					
+					<!-- https://mvnrepository.com/artifact/org.apache.tomcat/tomcat-jasper -->
+					<dependency>
+					    <groupId>org.apache.tomcat</groupId>
+					    <artifactId>tomcat-jasper</artifactId>
+					    <version>9.0.44</version>
+					</dependency>
+					    <!-- https://mvnrepository.com/artifact/javax.servlet/javax.servlet-api -->
+					<dependency>  
+					    <groupId>javax.servlet</groupId>  
+					    <artifactId>servlet-api</artifactId>  
+					    <version>3.0-alpha-1</version>  
+					</dependency>
+					
+					<!-- https://mvnrepository.com/artifact/javax.servlet/jstl -->
+					<dependency>
+					    <groupId>javax.servlet</groupId>
+					    <artifactId>jstl</artifactId>
+					    <version>1.2</version>
+					</dependency>
+					    <!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
+					<dependency>
+					    <groupId>mysql</groupId>
+					    <artifactId>mysql-connector-java</artifactId>
+					    <version>8.0.11</version>
+					</dependency>
+					    <!-- https://mvnrepository.com/artifact/org.springframework/spring-jdbc -->
+					<dependency>
+					    <groupId>org.springframework</groupId>
+					    <artifactId>spring-jdbc</artifactId>
+					    <version>5.1.1.RELEASE</version>
+					</dependency>
+			
+					  <!--  <dependency>
+					  <groupId>org.springframework.boot</groupId>
+					    <artifactId>spring-boot-devtools</artifactId>
+					      <version>2.6.2</version>
+					      </dependency>-->
+				</dependencies>
+  
+  <build>
+    <finalName>SpringMVC-JDBC-7-4-1</finalName>
+	<plugins>
+	   <plugin>
+	        <artifactId>maven-compiler-plugin</artifactId>
+			<!--  // <version>3.5.1</version> -->
+	       <version>3.5.1</version>
+	        <configuration>
+	        <!--     <scope>provided</scope>--> 
+	            <source>1.8</source>
+	            <target>1.8</target>
+	        </configuration>
+	    </plugin>
+    
+		 <!--      
+		     <plugin>
+		        <groupId>org.apache.maven.plugins</groupId>
+		        <artifactId>maven-jar-plugin</artifactId>
+		        <version>3.2.0</version>
+		        <configuration>
+		          <archive>
+		            <manifestFile>${project.build.outputDirectory}/META-INF/MANIFEST.MF</manifestFile>
+		          </archive>
+		        </configuration>
+		</plugin>
+		      -->
+   </plugins>    
+</build>
+</project>
