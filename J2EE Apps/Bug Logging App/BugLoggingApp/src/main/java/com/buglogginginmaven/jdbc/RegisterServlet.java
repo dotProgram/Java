@@ -73,12 +73,13 @@ String databaseconnection_username = databaseconnection_obj.databaseconnection_u
             String password = request.getParameter("password");
             String email = request.getParameter("email");
             String phno_String = request.getParameter("phno");
-            int phno = Integer.parseInt(phno_String); 
+         //   int phno = Integer.parseInt(phno_String); 
             
             try {
-                System.out.println("Inside try com.mysql.jdbc.Driver com.mysql.jdbc.Driver");
+                System.out.println("2022 -- Inside try com.mysql.jdbc.Driver com.mysql.jdbc.Driver");
                 Class.forName(databaseconnection_driver);                                                                                                                                                                 System.out.println("Reached com.mysql.jdbc.Driver"); 
-                Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/servlet", "root", "");                                                            System.out.println("Reached DriverManager  jdbc:mysql://localhost:3306/servlet"); 
+                Connection con = DriverManager.getConnection(databaseconnection_url_db ,databaseconnection_username, databaseconnection_password);                                                            
+                System.out.println("Reached DriverManager"+  databaseconnection_url_db+" \n Also updated the Register class Servlet"); 
                 PreparedStatement ps = con.prepareStatement("insert into user (firstN,lName,userid,password,email,phno,role) values(?,?,?,?,?,?,?)");  System.out.println("Reached PreparedStatement");
                 
              // ps.setString(1,);
@@ -88,7 +89,8 @@ String databaseconnection_username = databaseconnection_obj.databaseconnection_u
                 ps.setString(4, password);
                 ps.setString(5, email);
                 ps.setString(7, userType);
-                 ps.setInt(6, phno);                                                                                                                                                                                          System.out.println("Reached ps.setString(6, phno");
+                 ps.setString(6, phno_String);  
+               //  ps.setInt(6, phno);                                                                                                                                                                                          System.out.println("Reached ps.setString(6, phno");
                 
                 int i = ps.executeUpdate();
                 if (i > 0){
