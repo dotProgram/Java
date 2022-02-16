@@ -229,7 +229,7 @@
                                                                  
                                                              sqlWhereCondQuery_project2 = null;
                                                                    
-                                                                   String first_name, last_name, concat, ids, project_name;
+                                                                   String first_name, last_name, concat, ids, project_name, project_uid;
                                                                    int id;
 
                                                                                 %>
@@ -273,6 +273,7 @@
                                                                                                                                                     <%  while(resultset2.next()){ 
                                                                                                                                                     //id =  resultset.getInt(1);  
                                                                                                                                                     //ids =  resultset2.getString(1);  
+                                                                                                                                                    project_uid = resultset2.getString(4);
                                                                                                                                                     project_name = resultset2.getString(2);
                                                                                                                                                     System.out.println("\n project_name: "+project_name);
                                                                                                                                                     //last_name = resultset2.getString(3);
@@ -280,7 +281,7 @@
                                                                                                                                                    // resultset.getString(6)
                                                                                                                                                     %>
                                                                                                                                                          
-                                                                                                                                                     <option name="project_name" value="<%= project_name %>"><%= project_name %></option>
+                                                                                                                                                     <option name="project_name" value="<%= project_uid %>"><%= project_name %></option>
                                                                                                                                         <% } %>
                                                                                                                       </select> 
                                                                                                            </th>

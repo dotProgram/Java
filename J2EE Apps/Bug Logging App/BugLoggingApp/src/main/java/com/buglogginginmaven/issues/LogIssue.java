@@ -44,24 +44,25 @@ String databaseconnection_username = databaseconnection_obj.databaseconnection_u
                                                 //int loggedByUserID = session.getAttribute("id").toString();
                                                 int loggedByUserID = Integer.parseInt(session.getAttribute("id").toString());
                                                 System.out.println("logged By UserID: "+loggedByUserID) ;
-                                        // TODO Auto-generated method stub id =  resultset.getInt(1);  
-                                           String ddid_value = request.getParameter("assigned_user_id");
-                                           String ddid_value2 = request.getParameter("ddid");
-                                         int   assigned_user_id_int = Integer.parseInt(ddid_value);
+                                                // TODO Auto-generated method stub id =  resultset.getInt(1);  
+                                               String ddid_value = request.getParameter("assigned_user_id");
+                                                String ddid_value2 = request.getParameter("ddid");
+                                                int   assigned_user_id_int = Integer.parseInt(ddid_value);
                                          
 		String issue_title = request.getParameter("issue_title");
 		String assigned_user_id = request.getParameter("assigned_user_id");
-                                           String issue_status = request.getParameter("issue_status");
+                                                String issue_status = request.getParameter("issue_status");
 		String issue_description = request.getParameter("issue_description");
-                                           String platform = request.getParameter("platform");
-		String platform_version = request.getParameter("platform_version");
-                                           String browser = request.getParameter("browser");
-                                           String browser_version = request.getParameter("browser_version");
-                                           String attached_file = request.getParameter("attached_file");
+                                                 String platform = request.getParameter("platform");
+                        	String platform_version = request.getParameter("platform_version");
+                                                 String browser = request.getParameter("browser");
+                                                 String browser_version = request.getParameter("browser_version");
+                                                String attached_file = request.getParameter("attached_file");
+                                                String issue_project = request.getParameter("issue_project");
 		
-                                           String html_1 = "<html> <head> <meta charset=\"UTF-8\"> <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"> </head> <body> <div>";
-                                           String html_2 = "</div></body></html>";
-                                           // String invalid ;       
+                                                 String html_1 = "<html> <head> <meta charset=\"UTF-8\"> <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"> </head> <body> <div>";
+                                                  String html_2 = "</div></body></html>";
+                                               // String invalid ;       
 
 
 
@@ -126,7 +127,7 @@ String databaseconnection_username = databaseconnection_obj.databaseconnection_u
                                                                                     ps.setString(8, browser_version);                                                                                
                                                                                     ps.setString(9, attached_file);  
                                                                                     ps.setInt(10, loggedByUserID);  
-                                                                                    ps.setInt(11, 911);  
+                                                                                    ps.setString(11, issue_project);  
                                                                                     
                                                                                     int i = ps.executeUpdate();
                                                                                     if (i > 0)
