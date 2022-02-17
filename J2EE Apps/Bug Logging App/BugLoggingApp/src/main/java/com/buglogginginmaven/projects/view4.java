@@ -173,9 +173,6 @@ res.sendRedirect("admin/project.jsp");
                                                                         con.close();  
                                                          }  
 
-                                                    // TO RETRIVE DATA OF USER FROM DATABASE               |||||||||||||||||||||||||\\\\\
-                                                    // TRY STATEMENT ***************ENDS                          |||||||||||||||||||||||||/////
-
 
                                                         catch (ClassNotFoundException | SQLException e) 
                                                        {  
