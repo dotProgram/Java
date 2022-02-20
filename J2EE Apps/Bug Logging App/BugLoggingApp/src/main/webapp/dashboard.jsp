@@ -54,7 +54,7 @@
                     <div class="sb-sidenav-menu">
                         <div class="nav">
                             <div class="sb-sidenav-menu-heading">Core</div>
-                            <a class="nav-link" href="index.html">
+                            <a class="nav-link active" href="index.html">
                                 <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
                                 Dashboard
                             </a>
@@ -217,10 +217,10 @@
             <div id="layoutSidenav_content">
                 <main>
                     <div class="container-fluid">
-                        <h1 class="mt-4">Static Navigation</h1>
+                        <h1 class="mt-4">Dashboard</h1>
                         <ol class="breadcrumb mb-4">
-                            <li class="breadcrumb-item"><a href="index.html">Dashboard</a></li>
-                            <li class="breadcrumb-item active">Static Navigation</li>
+                            <li class="breadcrumb-item"><a href="dashboard.jsp">Dashboard</a></li>
+                           <!--    <li class="breadcrumb-item active">Static Navigation</li>-->
                         </ol>
                         <div class="card mb-4">
                             <div class="card-body">

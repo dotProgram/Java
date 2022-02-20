@@ -31,7 +31,7 @@
                         <a class="dropdown-item" href="#">Settings</a>
                         <a class="dropdown-item" href="#">Activity Log</a>
                         <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="logout">Logout</a>
+                        <a class="dropdown-item" href="../logout">Logout</a>
                     </div>
                 </li>
             </ul>
@@ -192,7 +192,8 @@ out.println("<a class=\"nav-link collapsed\" href=\"#\" data-toggle=\"collapse\"
                     <div class="container-fluid">
                         <h1 class="mt-4">New Issue</h1>
                         <ol class="breadcrumb mb-4">
-                            <li class="breadcrumb-item"><a href="index.html">Dashboard</a></li>
+                            <li class="breadcrumb-item"><a href="../dashboard.jsp">Dashboard</a></li>
+                            <li class="breadcrumb-item"><a href="../dashboard.jsp">Issues</a></li>
                             <li class="breadcrumb-item active">New Issue</li>
                         </ol>
                         <div class="card mb-4">

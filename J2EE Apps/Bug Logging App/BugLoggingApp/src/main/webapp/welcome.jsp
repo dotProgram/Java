@@ -19,6 +19,7 @@
 <title> Success Page</title>
 </head>
 <body bgcolor="lightyellow">
+    <%-- 
            <a><br>Welcome ADMIN!!!!</br></a>
            <a><br>Welcome ${username}!!!!</br></a>
          <span><%= session.getAttribute("user_name") %>         </span>
@@ -28,11 +29,12 @@
          <span> Admin Id :<%= session.getAttribute("admin_id_of_the_logged_in_user") %>         </span>
          
            <br><span>Logged Id  :  <%= session.getAttribute("id") %>         </span><br>
+    <span> <h1>This is the Admin Page</h1>       </span>
+         --%>
          
-         
-                 <span> <h1>This is the Admin Page</h1>       </span>
+                 
           <span> <h1><a href="issues/addNewIssue.jsp">Add Issue</a><br></h1>       </span>
-           <span> <h1><a href="issues/addNewIssue">View Issue</a><br></h1>       </span>
+           <span> <h1><a href="issues/vad2?id=27&request=viewlist">View Issue</a><br></h1>       </span>
            <span> <h1><a href="projects/view3"> Projects</a><br></h1>       </span>
            <span> <h1><a href="projects/view.jsp"> Projects</a><br></h1>       </span>
               <span> <h1><a href="display"> View Members</a><br></h1>       </span>
