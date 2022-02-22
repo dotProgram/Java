@@ -11,6 +11,14 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Add Project</title>
+          <!-- PLUGINS CSS STYLE -->
+  <link rel="stylesheet" href="../plugins/bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="../plugins/themify-icons/themify-icons.css">
+  <link rel="stylesheet" href="../plugins/slick/slick.css">
+  <link rel="stylesheet" href="../plugins/slick/slick-theme.css">
+  <link rel="stylesheet" href="../plugins/fancybox/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="../plugins/aos/aos.css">
+
     </head>
     <body>
         <h1>Add Project Page</h1>
