@@ -73,7 +73,7 @@ res.sendRedirect("display");
                                                                         Connection con = DriverManager.getConnection(databaseconnection_url_db, databaseconnection_username, databaseconnection_password);                                                            System.out.println("Reached DriverManager  jdbc:mysql://localhost:3306/servlet"); 
                                                                         // Here dsnname- mydsn,user id- system(for oracle 10g),password is pintu.  
                                                                         Statement stmt = con.createStatement();  
-                                                                        ResultSet rs = stmt.executeQuery("select * from user");    System.out.println("select * from user"); 
+                                                                        ResultSet rs = stmt.executeQuery("select * from user where role = 'user'");    System.out.println("select * from user where role = 'user'"); 
                                                                         out.println("<form action=display method=post> <input type=\"submit\" value=\"delete\" name=\"delete\"/>");  
                                                                         out.println("<div class=\"table-responsive\">");  
                                                                         out.println("<table class=\"table\"  border=1 width=50% height=50% color=lightgreen>");  
