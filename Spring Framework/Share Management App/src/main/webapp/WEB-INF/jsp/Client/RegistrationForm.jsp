@@ -26,37 +26,38 @@ ${clientRegistrationModel}
 
 
 
-
+<div class="form-group">
 
 
       	<table class="table div-center"" >  
       	<tr>
-      	<th></th><th>Client Registration Form</th> 
+      	<td></td><td><h3>Client Registration Form</h3></td> 
         </tr> 
   
          <tr>  
-          <td>firstName</td> 
-          <td><form:input path="firstName"  /></td>
+          <td>First Name</td> 
+          <td><form:input path="firstName" class="form-control" /></td>
          </tr>  
                   <tr>  
-          <td>lastName</td> 
-          <td><form:input path="lastName"  /></td>
+          <td>Last Name</td> 
+          <td><form:input path="lastName" class="form-control" /></td>
          </tr>  
                   <tr>  
-          <td>emailAddress</td> 
-          <td><form:input path="emailAddress"  /></td>
+          <td>Email Address</td> 
+          <td><form:input path="emailAddress" class="form-control" /></td>
          </tr>  
                   <tr>  
-          <td>password</td> 
-          <td><form:input path="password"  type="password"/></td>
+          <td>Password</td> 
+          <td><form:input path="password" class="form-control" type="password"/></td>
          </tr>  
 <tr>  
           <td></td> 
-          <td><form:input type="submit" value="save" path=""/></td>
+          <td><form:input type="submit" class="btn btn-primary" value="Submit" path=""/></td>
          </tr>  
 </table>  
 
 </form:form>
+</div>
 </div>
 </body>
 </html>

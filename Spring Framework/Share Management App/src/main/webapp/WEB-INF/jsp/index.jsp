@@ -50,7 +50,7 @@ session_first_name = ${session_first_name} <br>
 <section>
     <div class="row">
 		<div class="col-md-12">
-			<p>I needed dashboard buttons for a project without having to make lots of different images to use as buttons, as the new CMS was going to be bootstrap based i decided to make them with glyphicons in custom sized buttons.</p>
+		
         </div>
     </div>
 	<div class="row">

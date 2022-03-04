@@ -1,8 +1,12 @@
 <%@ taglib uri="http://www.springframework.org/tags/form" prefix="form"%>  
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>  
 <%@ include file="../global/theme/header.jsp" %> 
+
+
+
 <body style="background-image:url(${pageContext.request.contextPath}/images/Spring-Framework-min.jpg); text-align:center">
-		<h1>Edit Employee - Confirm Form</h1>
+		<h1>Edit Equity Details</h1>
+                <div class="form-group" style="background-color: white;">
        <form:form method="POST" action="../update"  align="center">  
       	<table class="table" class="table" >  
       	<tr>
@@ -15,36 +19,36 @@
          </tr> 
   
          <tr>  
-          <td>Stock Name Listed on Exchange: </td> 
-          <td><form:input path="stockNameListed"  /></td>
+          <td><label for="" class="col-form-label-lg">Stock Name Listed on Exchange: </label></td> 
+          <td><form:input path="stockNameListed" class="form-control" /></td>
          </tr>  
          <tr>  
-          <td>Stock Title :</td>  
-          <td><form:input path="stockNameTitle" /></td>
+          <td><label for="" class="col-form-label-lg">Stock Title :</label></td>  
+          <td><form:input path="stockNameTitle" class="form-control"/></td>
          </tr> 
          <tr>  
-          <td>Stock Discription :</td>  
-          <td><form:textarea path="stockDiscription" /></td>
+          <td><label for="" class="col-form-label-lg">Stock Discription :</label></td>  
+          <td><form:textarea path="stockDiscription" class="form-control"/></td>
          </tr> 
                   <tr>  
-          <td>Stock Sector : </td> 
-          <td><form:input path="stockSector"  /></td>
+          <td><label for="" class="col-form-label-lg">Stock Sector : </label></td> 
+          <td><form:input path="stockSector"  class="form-control"/></td>
          </tr>  
          <tr>  
-          <td>Stock Purchase Rate:</td>  
-          <td><form:input path="stockPriceAtTheTimeOfPurchase" /></td>
+          <td><label for="" class="col-form-label-lg">Stock Purchase Rate:</label></td>  
+          <td><form:input path="stockPriceAtTheTimeOfPurchase" class="form-control"/></td>
          </tr> 
          <tr>  
-          <td>Stock Date Of Purchase :</td>  
-          <td><form:input type="date" path="stockDateOfPurchase" /></td>
+          <td><label for="" class="col-form-label-lg">Stock Date Of Purchase :</label></td>  
+          <td><form:input type="date" path="stockDateOfPurchase" class="form-control"/></td>
          </tr> 
                   <tr>  
-          <td>Current Stock Price :</td>  
-          <td><form:input path="currentStockPrice" /></td>
+          <td><label for="" class="col-form-label-lg">Current Stock Price :</label></td>  
+          <td><form:input path="currentStockPrice" class="form-control"/></td>
          </tr> 
          <tr>  
-          <td>Total Number Of Stock Owenerships:</td>  
-          <td><form:input path="numberOfStocks" /></td>
+          <td><label for="" class="col-form-label-lg">Total Number Of Stock Owenerships:</label></td>  
+          <td><form:input path="numberOfStocks" class="form-control" /></td>
          </tr> 
          <tr>  
           <td> </td>  
@@ -56,4 +60,5 @@
          </tr>  
         </table>  
        </form:form>  
+       </div>
  <%@ include file="../global/theme/footer.jsp" %>   
