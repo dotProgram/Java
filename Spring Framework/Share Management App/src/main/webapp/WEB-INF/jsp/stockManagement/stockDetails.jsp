@@ -20,12 +20,14 @@
                                         <form:hidden  path="" /> 
                                         <form:hidden  path="" /> <form:hidden  path="" /> 
                                         <form:hidden  path="" />   
-                                        
-        <button type="submit" class="btn btn-default">
-          <span class="glyphicon glyphicon-pencil"></span> Edit 
-        </button>
-                                       
-                                        </form:form> 
+                           
+                <button type="submit" class="btn btn-default">
+                <span class="glyphicon glyphicon-pencil"></span> Edit 
+                </button>
+         </form:form> 
+                 <button onclick = "window.print()" type="button" class="btn btn-default">
+                <span class="glyphicon glyphicon-print"></span> Print
+                </button>
                                 </td>
                         </tr>   
        
@@ -47,23 +49,23 @@
 
          </tr> 
          <tr>  
-          <td>stock Id : </td> 
+          <td>Stock Id : </td> 
          <td>${command.id}</td>
          </tr>  
          <tr>  
-          <td>stockName Title :</td>  
+          <td>Stock Code on Exchange  :</td>  
         <td>${command.stockNameListed}</td>
          </tr> 
          <tr>  
-          <td>stock stocknameTitle :</td>  
+          <td>Stock Stock Title :</td>  
           <td>${command.stockNameTitle}</td>
          </tr> 
                   <tr>  
-          <td>stock Price AtTheTimeOfPurchase :</td>  
+          <td>Stock Price At The Time of Purchase :</td>  
           <td>${command.stockPriceAtTheTimeOfPurchase}</td>
          </tr> 
                   <tr>  
-          <td>stock Date OfPurchase :</td>  
+          <td>Stock Date Of Purchase :</td>  
           <td>${command.stockDateOfPurchase}</td>
          </tr> 
                   <tr>  
@@ -75,35 +77,38 @@
           <td>${command.numberOfStocks}</td>
          </tr> 
                   <tr>  
-          <td>stockSector :</td>  
+          <td>Stock Sector :</td>  
           <td>${command.stockSector}</td>
          </tr> 
                               <tr>  
-          <td>stockDiscription :</td>  
+          <td>Stock Discription :</td>  
           <td>${command.stockDiscription}</td>
          </tr>   
                                      <tr>  
         <td>Personal Note :</td>  
           <td>${command.stockDiscription}</td>
          </tr>
-        <td>Equity Sell Date :</td>  
+        <td>Proposed Equity Sell Date :</td>  
           <td>${command.stockDateOfPurchase}</td>
          </tr>
 
           <tr>  
           <td> <form:checkbox path="" value=""/>  I confirm to save details as above </td>  
-          <td><input type="submit" class="btn btn-success"  value="Evaluate" /> 
+          <td>
+          <div style="text-align:center;">
+          <input type="submit" class="btn btn-success btn-lg"  value="Evaluate" /> 
+          </div>
           </form:form> 
           </td>
 
 <tr>  
-			 <form:form method="POST" action="../../editStock/${command.id}"  align="center" > 
+	<%-- 	 <form:form method="POST" action="../../editStock/${command.id}"  align="center" > 
           <td><form:hidden  path="" /> <form:hidden  path="" /> <form:hidden  path="" /> <form:hidden  path="" /> </td>  
           
           <td><input type="submit" class="btn btn-primary"  value="Edit" /></td>
     
         
-     </form:form> 
+     </form:form> --%>	
     </tr> 
       </table> 
       </div>     
